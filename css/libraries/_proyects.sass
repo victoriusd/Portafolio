@@ -1,0 +1,66 @@
+@import "_complements"
+
+#proyects
+    &__content-main
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__contact-btn
+        @include btn(#51cacb , #183340 , #51cacb , #51cacb , 2px , 1.5rem , 25px , 15px, -5px)
+        &--container
+            display: flex
+            justify-content: center
+    &-main-heading
+        font-size: 12rem
+        letter-spacing: -4px
+        color: $color-1
+        font-weight: 700
+        &::after
+            content: ''
+            position: absolute
+            background-color: $color-2
+            top: 28rem
+            height: 5px
+            width: 3rem
+            background: $color-2
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 5px
+
+.proyects
+    &__container-title
+        padding: 6rem 0 9rem
+        text-align: center
+
+.proyect
+    
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 29rem
+    transition-property: transform
+    transition-duration: 0.3s
+    transition-timing-function: ease
+    margin-bottom: 2em
+    border-radius: 0px 0px 0.5rem 0.5rem
+    background-color: #1e2d52
+    box-shadow: 0px 8px 6px -6px #1e2d5277
+    &__link
+        display: flex
+        flex-direction: row
+        justify-content: center
+        background-color: #f5f4fc9e
+        border-radius: 0.5rem 0.5rem 0px 0px
+    &__logo
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 19rem
+        height: 16rem
+    &__info
+        padding: 2.6rem
+        & h5
+            font-size: 1.8rem
+            color: $color-1
+    &:hover
+        transform: translateY(-9px)

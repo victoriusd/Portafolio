@@ -1,0 +1,45 @@
+$color-1: #51cacb
+$color-2: #236e6e
+$color-3: #8B99AD
+
+@mixin btn($color, $color-h, $backcolor, $backcolor-h, $border-r, $f-size, $padd-lr, $padd-tb, $translateY)
+    color: $color 
+    border: 1px solid $backcolor
+    font-size: $f-size
+    border-radius: $border-r
+    padding: $padd-tb $padd-lr
+    transition-property: background-color, color, transform
+    transition-duration: 0.3s
+    transition-timing-function: ease
+    &:hover
+        transform: translateY($translateY)
+        color: $color-h
+        background-color: $backcolor-h
+        
+
+@mixin colCenter()
+    display: flex
+    flex-direction: column
+    align-items: center
+
+@mixin rowStart($gap, $paddleft, $margin)
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: $gap
+    padding-left: $paddleft
+    margin: $margin
+
+@mixin rowCenter()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin rowEnd($gap, $paddright, $margin)
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    gap: $gap
+    padding-right: $paddright
+    margin: $margin
+

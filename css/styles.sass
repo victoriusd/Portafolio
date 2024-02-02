@@ -1,0 +1,205 @@
+
+@import "libraries/_home"
+@import "libraries/_complements"
+@import "libraries/_aboutMe"
+@import "libraries/_proyects"
+
+
+
+
+/* BASIC STYLES
+
+*
+    box-sizing: border-box
+    margin: 0%
+    padding: 0%
+    font-family: 'Kanit', sans-serif
+    font-size: 10px
+    text-decoration: none
+    color: $color-3
+    transition: all .2s linear
+    /*color: #8A99AD  color: #E2E8F0
+
+
+body
+    width: 100%
+    /*background-color: #0F172A*/
+    background: linear-gradient(to bottom, #0F172A, #172341)
+
+*::selection
+    background-color: $color-1
+    color: #236e6e
+
+/* NAVBAR STYLES
+#navBar
+    position: sticky
+    top: 10px
+    z-index: 2
+    &__layout 
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 1rem auto 0
+    &__inner
+        display: flex
+        background: rgba(15, 23, 42, 0.7)
+        backdrop-filter: blur(10px) saturate(1.7) 
+        border-radius: 50px 
+        
+
+.navBar
+    &__item
+        display: flex
+        margin: 0
+        padding: 1rem
+
+
+        & a
+            margin: 0 5px
+            padding: 0.5rem 1.2rem 0.5rem 1.2rem
+            font-size: 1.8rem
+            border-radius: 2.4rem
+            text-decoration: none
+            color: $color-2
+            display: flex
+            align-items: center
+            &:hover
+                color: $color-1
+
+/* Footer STYLES 
+.heading-footer
+    font-size: 2.2rem
+    text-transform: uppercase
+    letter-spacing: 1px
+
+.footer__links
+    & a
+        margin: 0 5px
+        padding: 0.5rem 1.2rem 0.5rem 1.2rem
+        font-size: 1.8rem
+        border-radius: 2.4rem
+        text-decoration: none
+        color: #fff
+        display: flex
+        align-items: center
+        &:hover
+            color: $color-1
+
+#main-footer
+    margin-top: 5rem   
+    background: #000
+    color: #fff
+    &__upper
+        display: flex
+        justify-content: space-between
+        padding: 8rem 0
+    &__social-cont
+        margin-top: 3rem
+        & a
+            padding-right: 1.6rem 
+            & img
+                width: 2.5rem
+    &__short-desc
+        margin-top: 3rem
+        color: #fff
+        font-size: 1.5rem
+        line-height: 1.7
+    &__lower
+        padding: 4rem 0
+        border-top: 1px solid #444
+        font-size: 1.2rem
+        text-align: left
+        text-align: center
+    &__links
+        display: flex
+        justify-content: space-evenly
+    &__copyright
+        color: #fff
+        margin-top: 2rem
+        font-size: 1.2rem
+        text-align: left
+        text-align: center
+        & a 
+            margin-top: 2rem
+            color: #fff
+            font-size: 1.2rem
+            text-decoration: underline
+            font-weight: 700
+            margin-left: 2px
+            &:hover
+                color: $color-1
+
+.main-footer__row
+    &-1
+        order: 2
+    &-2
+        width: 40%
+        order: 1
+        max-width: 48rem
+
+
+
+/* NAVBAR STYLES 
+    
+    &__layout
+        display: grid
+        grid-template-columns: 1fr 1fr
+        padding-top: 15px
+        padding-bottom: 15px
+        
+    &__start
+        @include rowStart(20px,20px,0px)
+    &__end
+        @include rowEnd(20px, 10px, 0px)
+    &--btn
+        @include btn( $color-1 , #183340 , $color-1 , $color-1 , 2px , 1.2rem , 15px , 10px, 0px)
+    
+    .navBar--a
+    color: $color-3
+    font-size: 1.1rem
+    & span
+        color: $color-1
+        font-size: 1.1rem
+
+
+
+
+
+
+.main-container
+    max-width: 120rem
+    margin: auto
+    width: 92%
+
+.content-title
+    font-size: 2.8rem
+    font-weight: 700
+    margin-bottom: 48px
+    color: $color-1
+
+.container-title
+        margin-bottom: 9rem //144px
+        display: flex
+        flex-direction: column
+        
+
+.heading-sec
+    font-size: 5rem
+    text-transform: uppercase
+    letter-spacing: 3px
+    text-align: center
+    margin-bottom: 3.5rem
+    color: $color-1
+    &__sub
+        display: block
+        text-align: center
+        color: $color-3
+        font-size: 2.2rem
+        font-weight: 500
+        max-width: 80rem
+        margin: auto
+        line-height: 1.6
+
+/* MAIN SECTION STYLES
+
+

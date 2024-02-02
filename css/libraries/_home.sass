@@ -1,0 +1,79 @@
+@import "_complements"
+
+    
+#home
+    &__layout
+        display: flex
+        height: 100vh
+        justify-content: start
+        align-items: center
+        margin-top: 5rem
+        margin-left: 12.5rem
+        padding-bottom: 135px
+    &__img
+        margin-left: 90px
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__titles--container
+        display: flex
+        flex-direction: column 
+        gap: 5px
+    &__parrafs--container
+        line-height: 1.2
+        max-width: 700px
+        & p
+            font-size: 1.8rem
+    &__parrafs--container p:first-child
+        margin-bottom: 10px
+    &__btn
+        @include btn(#51cacb , #183340 , #51cacb , #51cacb , 2px , 1.7rem , 25px , 15px, -5px)
+        &--container
+            display: flex
+            margin-top: 10px
+
+.home
+    &--h3
+        font-size: 2rem
+        color: #51cacb
+    &--h2
+        font-size: 6rem
+        color: #fff
+    &--subtitle
+        color: $color-3
+    &__hero-mouse-scroll-cont
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(0)
+
+.mouse
+    width: 25px
+    height: 40px
+    border: 2px solid #fff
+    border-radius: 60px
+    position: relative
+    overflow: hidden
+    &::before
+        content: ''
+        width: 5px
+        height: 5px
+        position: absolute
+        top: 7px
+        left: 50%
+        transform: translateX(-50%)
+        background-color: #fff
+        border-radius: 50%
+        opacity: 1
+        animation: wheel 1.3s infinite
+
+@keyframes wheel
+    to
+        opacity: 0
+        top: 22px
+
+@-webkit-keyframes wheel
+    to 
+        opacity: 0
+        top: 22px

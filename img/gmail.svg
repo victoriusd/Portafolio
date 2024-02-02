@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+	<title>gmail-svg</title>
+	<style>
+		.s0 { fill: none;stroke: #ffffff;stroke-linejoin: round;stroke-width: 12 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m22 57.3v84.7c0 5.5 4.5 10 10 10h24v-56.9l40 30.2 40-30.2v56.9h24c5.5 0 10-4.5 10-10v-84.7c0-13.3-15.2-20.8-25.7-12.8l-48.3 36.8-48.3-36.8c-10.6-8-25.7-0.5-25.7 12.8z"/>
+</svg>

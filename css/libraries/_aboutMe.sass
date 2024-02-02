@@ -1,0 +1,137 @@
+@import "_complements"
+
+/* 
+    diseños sobre mi pagina principal
+        index.html
+
+#aboutMe
+    &__content
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        column-gap: 5rem
+        &-main
+            display: grid
+            row-gap: 5rem
+        &-skills
+            display: flex
+            flex-wrap: wrap
+            width: 30rem
+            & div
+                font-size: 1.6rem
+                color: #fff
+                padding: 1rem 2rem
+                margin-left: 1.5rem
+                margin-bottom: 1.5rem
+                background: rgba(153,153,153,.2)
+                transition: background 0.3s ease 
+                border-radius: 5px
+                font-weight: 600
+                &:hover
+                    background: rgba(81, 203, 203, 0.2)
+        &-networks
+            display: flex
+            height: 74rem
+            flex-direction: column
+            gap: 40px
+            align-items: center
+            &-links
+                & :only-of-type
+                    margin-bottom: 20px
+                & div
+                    display: flex
+                    gap: 40px
+                    & a
+                        & img 
+                            width: 3rem
+                            border-radius: 5px
+    &__contact-btn
+        @include btn(#51cacb , #183340 , #51cacb , #51cacb , 2px , 1.5rem , 25px , 15px, -5px)
+        &--container
+            display: flex
+    
+
+.aboutMe
+    &__content-para
+        font-size: 1.8rem
+        color: $color-3
+        line-height: 1.7
+        margin-bottom: 1rem
+        &:last-child
+            margin-bottom: 4.5rem
+
+/* 
+    diseños sobre mi
+        about.html
+
+#about
+    &-main-heading
+        font-size: 12rem
+        letter-spacing: -4px
+        color: $color-1
+        font-weight: 700
+        &::after
+            content: ''
+            position: absolute
+            background-color: $color-2
+            top: 28rem
+            height: 5px
+            width: 3rem
+            background: $color-2
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 5px
+    &__content
+        &-main-info
+            display: grid
+            margin: 0 5rem
+            grid-template-columns: 0.5fr 1fr
+            column-gap: 4rem
+        &-sec
+            display: flex
+            flex-direction: column
+            margin-left: 15rem
+
+            & div
+                margin-right: 5rem 
+                    
+        &-networks
+            display: flex
+            flex-direction: column
+            margin-left: 15rem
+
+    &__info
+        &-intro
+            font-size: 5.4rem
+            color: $color-1
+            margin-bottom: 2rem
+            &-sec
+                text-align: start
+                font-size: 5rem
+                color: $color-1
+                margin-bottom: 2rem
+                
+
+.about
+    &__container-title
+        padding: 6rem 0 9rem
+        text-align: center
+    &__info-para
+        font-size: 2rem
+        color: $color-3
+        line-height: 1.7
+        margin-bottom: 2rem
+        & a 
+            font-size: 2rem
+            color: $color-1
+            line-height: 1.7
+            margin-bottom: 2rem
+            &:hover
+                color: $color-2
+        &-sec
+            font-size: 2rem
+            color: $color-3
+            line-height: 1.7
+            margin-bottom: 2rem
+            
+            
+
